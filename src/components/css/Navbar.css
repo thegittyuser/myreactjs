@@ -41,6 +41,7 @@
 .header .menu .mainmenu {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -48,9 +49,6 @@
   list-style-type: none;
   cursor: pointer;
   padding: 5px;
-}
-
-.drop-opener {
 }
 
 .drop-label {
