@@ -69,10 +69,7 @@
   position: absolute;
   padding: 20px 0px;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
   top: 100%; /* Optional: position below the parent */
-  background-color: white; /* Add background if needed */
-  z-index: 10;
 }
 
 .drop-opener .dropdown .drop-item {
@@ -81,7 +78,7 @@
 }
 
 .drop-opener:hover .dropdown {
-  display: block;
+  visibility: visible;
 }
 
 .header .icons {
