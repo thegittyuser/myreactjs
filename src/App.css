@@ -6,3 +6,13 @@
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.resort-image {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+.resort-image img {
+  width: 100%;
+}
