@@ -12,7 +12,6 @@
 .header {
   width: 100%;
   height: auto;
-  /* background-color: var(--redish); */
   padding: 15px 0px;
   display: flex;
   justify-content: space-around;
@@ -23,7 +22,14 @@
   width: 20%;
   height: auto;
   padding: 15px;
-  background-color: red;
+}
+
+.header .logo h2 {
+  margin-left: 30px;
+}
+
+.header .logo span {
+  color: var(--redish);
 }
 
 .header .menu {
@@ -35,18 +41,60 @@
 .header .menu .mainmenu {
   display: flex;
   justify-content: space-evenly;
+  position: relative;
 }
 
 .header .menu .mainmenu .menu-item {
   list-style-type: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.drop-opener {
+}
+
+.drop-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.drop-label svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.drop-opener .dropdown {
+  position: absolute;
+  padding: 20px 0px;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  top: 100%; /* Optional: position below the parent */
+  background-color: white; /* Add background if needed */
+  z-index: 10;
 }
 
 .drop-opener .dropdown .drop-item {
   list-style-type: none;
+  padding: 5px;
+}
+
+.drop-opener:hover .dropdown {
+  display: block;
 }
 
 .header .icons {
-  width: 20%;
+  width: 15%;
   height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 15px;
+  gap: 5px;
+}
+
+.header .icons svg:hover {
+  cursor: pointer;
+  color: var(--redish);
 }

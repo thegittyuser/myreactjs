@@ -6,7 +6,7 @@ function Navbar() {
       <div className="header">
         <div className="logo">
           <h2>
-            Nicky<span>Store</span>
+            Nicky<span>Store.</span>
           </h2>
         </div>
         <div className="menu">
@@ -14,12 +14,31 @@ function Navbar() {
             <li className="menu-item">Home</li>
             <li className="menu-item">Shop</li>
             <li className="menu-item drop-opener">
-              Categories
-              {/* <ul className="dropdown">
+              <span className="drop-label">
+                Categories
+                <svg
+                  class="w-6 h-6 text-gray-800 dark:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m8 10 4 4 4-4"
+                  />
+                </svg>
+              </span>
+              <ul className="dropdown">
                 <li className="drop-item">Men Watch</li>
                 <li className="drop-item">Tank Tops</li>
                 <li className="drop-item">Women Bracelets</li>
-              </ul> */}
+              </ul>
             </li>
             <li className="menu-item">Men</li>
             <li className="menu-item">Women</li>
@@ -65,11 +84,11 @@ function Navbar() {
           </span>
           <span className="search-icon">
             <svg
-              class="w-6 h-6 text-gray-800 dark:text-white"
+              class="w-4 h-4 text-gray-800 dark:text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               fill="none"
               viewBox="0 0 24 24"
             >
