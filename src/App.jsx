@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/hero.jsx"
+import Hero from "./components/hero.jsx";
 import "./App.css";
 
 function App() {

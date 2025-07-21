@@ -1,5 +1,5 @@
-import banner from "../assets/nicky-store-banner.webp"
-import "../components/css/hero.css"
+import banner from "../assets/nicky-store-banner.webp";
+import "../components/css/hero.css";
 
 function Hero() {
   return (
@@ -10,4 +10,4 @@ function Hero() {
     </>
   );
 }
-export default Hero
+export default Hero;
