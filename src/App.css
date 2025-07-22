@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 /* css variables */
@@ -21,18 +24,26 @@
 .resort-image {
   width: 100%;
   height: auto;
-  padding: 30px;
+  padding: 18px;
+  /* border: 5px solid black; */
 }
 
 .resort-image img {
   width: 100%;
 }
 
+.products {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  /* background-color: bisque; */
+}
+
 .main-products {
   width: 100%;
   height: auto;
   padding: 25px 0px;
-  background-color:transparent  ;
+  /* background-color: transparent; */
   display: flex;
   justify-content: space-evenly;
 }
@@ -41,8 +52,115 @@
   width: 400px;
   height: auto;
   /* background-color: white; */
+  /* border: 5px solid black; */
 }
 
 .main-products .products-1 img {
   width: 100%;
+}
+
+.main-products .products-1 .text-contents .name-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-products .products-1 .text-contents .name-price span {
+  color: #212b36;
+  font-size: 14px;
+}
+
+.main-products .products-1 .text-contents .color-category span {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+/* main-products 2 */
+
+.main-products-2 {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  /* background-color: var(--black); */
+  display: flex;
+  justify-content: center;
+}
+
+.main-products-2 .products-2 {
+  width: 616px;
+  height: auto;
+  /* border: 5px solid black; */
+  /* background-color: white; */
+}
+
+.main-products-2 .products-2 img {
+  width: 100%;
+}
+
+.main-products-2 .products-2 .text-contents .name-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-products-2 .products-2 .text-contents .name-price span {
+  color: #212b36;
+  font-size: 14px;
+}
+
+.main-products-2 .products-2 .text-contents .name-price .inline {
+  padding-right: 20px;
+}
+
+.main-products-2 .products-2 .text-contents .color-category span {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+/* banner-image */
+
+.main-banner {
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-image {
+  width: 97.5%;
+  height: 700px;
+  background-image: url("./assets/main-products/shirt-banner.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-image h2,
+.banner-image p {
+  color: #f3f3f3;
+}
+
+.main-banner-text .text-contents .name-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-banner-text .text-contents .name-price span {
+  color: #212b36;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.main-banner-text .text-contents .name-price .inline {
+  padding-right: 20px;
+}
+
+.main-banner-text .text-contents .color-category span {
+  color: #aaaaaa;
+  font-size: 13px;
+  padding-left: 20px;
 }
