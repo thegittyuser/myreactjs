@@ -2,10 +2,10 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 // import App from './App.jsx'
-import MyHook from "./hooks/State.jsx";
+// import Counter from "./hooks/Counter.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <MyHook />
+
   </StrictMode>
 );

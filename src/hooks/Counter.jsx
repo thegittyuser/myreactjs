@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../hooks/css/state.css";
+import "../hooks/css/counter.css";
 
-function MyHook() {
+function Counter() {
   const [count, setCount] = useState(15);
   return (
     <>
@@ -20,4 +20,4 @@ function MyHook() {
   );
 }
 
-export default MyHook;
+export default Counter;
