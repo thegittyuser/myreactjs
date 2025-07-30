@@ -7,7 +7,6 @@ import product_3 from "./assets/main-products/textured polo shirt 2.webp";
 import product_4 from "./assets/main-products/ribbed polo shirt.webp";
 import product_5 from "./assets/main-products/double strap slippers.webp";
 import "./App.css";
-import Products from "./components/products.jsx";
 
 function App() {
   return (
