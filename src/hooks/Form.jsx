@@ -5,15 +5,15 @@ function Form() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  //   const formMessage = (e) => {
-  //     e.preventDefault();
-  //     alert(`All fields are required!`);
-  //   };
+  const formMessage = (e) => {
+    e.preventDefault();
+    alert(`All fields are required!`);
+  };
 
   return (
     <>
       <div className="form-box">
-        <form>
+        <form onSubmit={formMessage}>
           <div className="usernameInput input-box">
             <label htmlFor="username">Enter Username:</label>
             <input
@@ -48,11 +48,6 @@ function Form() {
             <input type="submit" />
           </div>
         </form>
-
-        <br></br>
-        <p>Your Username is {username}</p>
-        <p>Your Email is {email}</p>
-        <p>Your Password is {password}</p>
       </div>
     </>
   );
