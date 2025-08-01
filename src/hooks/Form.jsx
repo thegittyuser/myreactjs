@@ -52,7 +52,10 @@ function Form() {
           </div>
         </form>
 
-        <p>Username is: {username} <br /> Email is: {email} <br /> Password is: {password}</p>
+        <p>
+          Username is: {username} <br /> Email is: {email} <br /> Password is:{" "}
+          {password}
+        </p>
       </div>
     </>
   );
