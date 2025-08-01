@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .list-box .todo-app {
@@ -20,12 +21,19 @@
   background-color: white;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
-
+  align-items: center;
+  flex-direction: column;
   gap: 30px;
 }
 
-.list-box .todo-app input {
+.list-box .todo-app .inputbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.list-box .todo-app .inputbtn input {
   height: 30px;
   font-size: 25px;
   padding: 20px;
@@ -35,12 +43,26 @@
 }
 
 /* attribute selector tag[attr="value"] */
-.list-box .todo-app input[type="submit"] {
+.list-box .todo-app .inputbtn button {
   height: 45px;
   padding: 6px 20px;
+  font-size: 25px;
   border: none;
   border-radius: 50px;
   background-color: #023047;
   color: white;
   cursor: pointer;
+}
+
+.list-box .task-todo {
+  width: 72%;
+  height: auto;
+  padding: 10px;
+  background-color: #023047;
+  border-radius: 5px;
+}
+
+.list-box .task-todo li{
+  color: white;
+  font-size: 20px;
 }
