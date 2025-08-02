@@ -3,11 +3,15 @@ import "../hooks/css/list.css";
 function List() {
   const [input, setInput] = useState("");
   //   const [todo, setTodo] = useState("List"); // for testing purpose
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setTodo(input);
+    if (input == "") {
+      alert("Field Required");
+      return;
+    }
+    setTodo([...todo, input]);
     setInput("");
   };
 
@@ -27,7 +31,9 @@ function List() {
             <button type="submit">Add Task</button>
           </form>
           <div className="task-todo">
-            <li>{todo}</li>
+              {todo.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
           </div>
         </div>
       </div>
