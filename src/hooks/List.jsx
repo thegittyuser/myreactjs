@@ -28,11 +28,11 @@ function List() {
           />
           <button type="submit">Add Task</button>
         </form>
-        <ul className="task-todo">
+        <div className="task-todo">
           {todos.map((task, index) => (
             <li key={index}>{task}</li>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
