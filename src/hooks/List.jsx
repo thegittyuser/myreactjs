@@ -7,11 +7,13 @@ function List() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (input.trim() === "") return; // prevent empty tasks
+    if (input == "") {
+      alert("Please enter a task"); // alert if input is empty
+      return; // prevent empty tasks
+    }
     setTodos([...todos, input]); // add new task to list
     setInput(""); // clear input
   };
-
   return (
     <div className="list-box">
       <div className="todo-app">
