@@ -1,20 +1,16 @@
 import { useState } from "react";
 import "../hooks/css/list.css";
+
 function List() {
   const [input, setInput] = useState("");
   //   const [todo, setTodo] = useState("List"); // for testing purpose
-  const [todo, setTodo] = useState([]);
+  const [todo, setTodo] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (input == "") {
-      alert("Field Required");
-      return;
-    }
-    setTodo([...todo, input]);
+    setTodo(input);
     setInput("");
   };
-
   return (
     <>
       <div className="list-box">
@@ -31,13 +27,11 @@ function List() {
             <button type="submit">Add Task</button>
           </form>
           <div className="task-todo">
-              {todo.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
+            <li>{todo}</li>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
