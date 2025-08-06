@@ -3,14 +3,15 @@ import "../hooks/css/list.css";
 
 function List() {
   const [input, setInput] = useState("");
-  //   const [todo, setTodo] = useState("List"); // for testing purpose
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState([]); // array for multiple tasks
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setTodo(input);
+    if (input.trim() === "") return; // prevent adding empty tasks
+    setTodo([...todo, input.trim()]);
     setInput("");
   };
+
   return (
     <>
       <div className="list-box">
@@ -27,11 +28,15 @@ function List() {
             <button type="submit">Add Task</button>
           </form>
           <div className="task-todo">
-            <li>{todo}</li>
+            <ul>
+              {todo.map((task, index) => (
+                <li key={index}>{task}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
