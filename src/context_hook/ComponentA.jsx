@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { createContext } from "react";
+import { useState , createContext} from "react";
 import ComponentB from "./ComponentB.jsx";
 export const ageContext = createContext();
 import "../context_hook/box.css";
