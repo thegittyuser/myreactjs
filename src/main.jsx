@@ -5,10 +5,11 @@ import "./index.css";
 // import Counter from "./hooks/Counter.jsx";
 // import Form from "./hooks/Form.jsx";
 // import List from "./hooks/List.jsx";
-import ComponentA from "./context_hook/ComponentA.jsx";
+// import ComponentA from "./context_hook/ComponentA.jsx";
+import Form from "./forms/Form.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ComponentA />
+    <Form />
   </StrictMode>
 );
